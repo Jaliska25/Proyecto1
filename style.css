@@ -1,5 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.pre-header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.pre-header > a {
+  color: white;
+  font-size: small;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.menu_hamburguesa {
+  height: 40px;
+  width: 40px;
+  display: none;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.menu li {
+  margin: 15px;
+  color: black;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+.icons li img {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+}
+/* --- QUERYS DEL HEADER --- */
+@media (max-width: 990px) {
+  nav {
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 1;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu_hamburguesa {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .lupa {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .logo {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  .corazon {
+    grid-column: 4/5;
+    grid-row: 1;
+  }
+  .bag {
+    grid-column: 5/6;
+    grid-row: 1;
+  }
+}
+/* MAIN - 1º Section */
+section {
+  width: 100%;
+  height: auto;
+}
+section a {
+  text-decoration: underline;
 }
