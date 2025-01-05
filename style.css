@@ -97,22 +97,14 @@ section {
   height: auto;
   object-fit: contain;
 }
-
-h2 {
+.click {
   position: absolute;
   margin-top: 35%;
-  margin-left: 2%;
-  font-size: xx-large;
+  margin-left: 3%;
+  color: white;
 }
-p {
-  position: absolute;
-  margin-top: 38%;
-  margin-left: 2%;
-}
-.verTodo {
-  position: absolute;
-  margin-top: 40%;
-  margin-left: 2%;
+h2 {
+  font-size: 36px;
 }
 .verTodo a {
   text-decoration: underline;
@@ -123,8 +115,119 @@ p {
     display: none;
   }
   .anuncioPequeño {
+    display: flex;
     width: 100%;
     height: auto;
     object-fit: contain;
+    margin-top: 100px;
+  }
+  .click {
+    position: absolute;
+    margin-top: 85%;
+  }
+  h2 {
+    font-size: x-large;
+  }
+}
+/* --- 2º SECTION ENCUENTRA TU TIENDA --- */
+.encuentra_tienda {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ede7d3;
+  gap: 20px;
+  padding: 10px;
+}
+.encuentra_tienda img {
+  width: 40px;
+}
+.encuentra_tienda a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
+/* --- 3º SECTION -JOYAS ---- */
+.joyas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+}
+.joyas img {
+  width: 100%;
+}
+.pendientes {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.collares {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.anillos {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.pulseras {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.novedades {
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+.topVentas {
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+.sueltos {
+  grid-column: 3/4;
+  grid-row: 2/2;
+}
+.charms {
+  grid-column: 4/5;
+  grid-row: 2/2;
+}
+.joyas a {
+  text-decoration: underline;
+  color: white;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 40px;
+}
+@media (max-width: 575px) {
+  .joyas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .anillos {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .pulseras {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .novedades {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .topVentas {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .sueltos {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .charms {
+    grid-column: 2/3;
+    grid-row: 4/5;
   }
 }
