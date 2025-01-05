@@ -36,7 +36,7 @@ header {
   display: flex;
   flex-direction: row;
 }
-.menu li {
+.menu li a {
   margin: 15px;
   color: black;
 }
@@ -61,7 +61,7 @@ header {
     display: none;
   }
   .nav_pequeño {
-    display: block;
+    display: flex;
   }
   .nav_pequeño ul {
     display: flex;
@@ -231,3 +231,4 @@ h2 {
     grid-row: 4/5;
   }
 }
+/* --- 4º section - Joyas que Arrasan --- */
