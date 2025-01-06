@@ -411,9 +411,7 @@ h5 {
   color: black;
   align-items: center;
 }
-.corazon {
-  width: 30px;
-}
+
 /* --- MEDIA QUERY 6º Section --- */
 @media (max-width: 900px) {
   .Caracteristicas {
@@ -433,4 +431,25 @@ h5 {
     height: 50px;
   }
 }
+
 /* --- 7º section, LOGOS REVISTAS --- */
+.revistas ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px;
+}
+.revistas ul img {
+  width: 150px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .revistas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+/* --- 8º section - Suscribirse --- */
