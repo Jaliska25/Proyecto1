@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Elipse_1" data-name="Elipse 1" cx="12.38" cy="12.38" rx="12.38" ry="12.38" transform="translate(0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_307" data-name="Grupo 307" transform="translate(1133 -1162)">
+    <g id="Grupo_301" data-name="Grupo 301" transform="translate(-1177 -15)">
+      <g id="Capa_2" data-name="Capa 2" transform="translate(50.981 1184)">
+        <g id="Capa_1" data-name="Capa 1" transform="translate(0 0)">
+          <g id="Grupo_3" data-name="Grupo 3" transform="translate(0 0)" clip-path="url(#clip-path)">
+            <rect id="Rectángulo_12" data-name="Rectángulo 12" width="28.15" height="12.115" transform="translate(-1.729 6.153)" fill="#fabd19"/>
+            <rect id="Rectángulo_13" data-name="Rectángulo 13" width="28.15" height="6.405" transform="translate(-1.729 -0.252)" fill="#ad1519"/>
+            <rect id="Rectángulo_14" data-name="Rectángulo 14" width="28.15" height="6.405" transform="translate(-1.729 18.268)" fill="#ad1519"/>
+          </g>
+        </g>
+      </g>
+      <rect id="Rectángulo_649" data-name="Rectángulo 649" width="38" height="38" transform="translate(44 1177)" fill="none"/>
+    </g>
+  </g>
+</svg>
