@@ -453,3 +453,94 @@ h5 {
   }
 }
 /* --- 8º section - Suscribirse --- */
+.suscribirse {
+  display: flex;
+  width: 100%;
+  background-color: #fcdfee;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+h5 {
+  font-size: x-large;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.email input {
+  padding: 10px;
+}
+.email div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px;
+}
+/* Casillas checkbox */
+.email div input {
+  width: 20px;
+  height: 20px;
+}
+.email button {
+  background-color: black;
+  color: white;
+  font-size: large;
+  padding: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.email a {
+  text-decoration: underline;
+  color: #0066cc;
+}
+/* --- FOOTER --- */
+/* -- Iconos Redes Sociales -- */
+/* -- Links Avisos Legales -- */
+.final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.legal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.legal li a {
+  color: black;
+  font-weight: bold;
+}
+.legal li:not(:last-child)::after {
+  content: '|';
+  color: black;
+  font-weight: bold;
+  margin: 10px;
+}
+/* Imagen sello europeo */
+.final img {
+  width: 250px;
+  height: auto;
+}
+.final p {
+  justify-content: center;
+  margin: 10px 50px;
+  font-size: small;
+  border: red 3px solid;
+}
+.enlaceEU {
+  color: black;
+  font-weight: bold;
+}
+/* Menú desplegable Países  */
+.final form select {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  background-color: #f4f4f4;
+  margin: 30px;
+}
