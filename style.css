@@ -13,7 +13,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 100;
+  z-index: 1;
 }
 .pre-header {
   background-color: black;
@@ -32,7 +32,6 @@ header {
   align-items: center;
   padding: 10px;
 }
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -130,6 +129,7 @@ h2 {
     font-size: x-large;
   }
 }
+
 /* --- 2º SECTION ENCUENTRA TU TIENDA --- */
 .encuentra_tienda {
   width: 100%;
@@ -150,7 +150,8 @@ h2 {
   font-weight: bold;
   color: black;
 }
-/* --- 3º SECTION -JOYAS ---- */
+
+/* --- 3º SECTION - JOYAS ---- */
 .joyas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -234,6 +235,7 @@ h2 {
     grid-row: 4/5;
   }
 }
+
 /* --- 4º section - Joyas que Arrasan --- */
 /* -- Encabezado de la sección -- */
 #arrasando {
@@ -274,13 +276,19 @@ h2 {
 }
 .perrito div button {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 25px;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
+.perrito div button:focus img {
+  content: url('Images/Arrasando/corazonRojo.png');
+}
+
 .viral {
   position: absolute;
-  bottom: 110px;
+  bottom: 25%;
   right: 18px;
   background-color: black;
   color: white;
@@ -290,11 +298,11 @@ h2 {
 .reversible {
   position: absolute;
   left: 5px;
-  bottom: 110px;
+  bottom: 25%;
   color: black;
   font-size: medium;
 }
-.perrito:hover {
+.perrito img:hover {
   transform: translateY(-10px);
 }
 /* ANILLO */
@@ -307,13 +315,109 @@ h2 {
 }
 .anilloLetter div button {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 25px;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
-.anilloLetter:hover {
+.anilloLetter div button:focus img {
+  content: url('Images/Arrasando/corazonRojo.png');
+}
+.anilloLetter img:hover {
   transform: translateY(-10px);
 }
+/* CIRCULOS ELECCIÓN COLOR Y METAL DEL CHARM */
+.circulos {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+.oro_negro {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #ebc880 50%, black 50%);
+  cursor: pointer;
+}
+.oro_negro:focus {
+  width: 20px;
+  height: 20px;
+  border: black 1px solid;
+}
+.oro_negro:not(:focus) {
+  width: 15px;
+  height: 15px;
+}
+.oro_blanco {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #ebc880 50%, white 50%);
+  border: #d1d1d1 1px solid;
+  cursor: pointer;
+}
+.oro_blanco:focus {
+  width: 20px;
+  height: 20px;
+  border: black 1px solid;
+}
+.oro_blanco:not(:focus) {
+  width: 15px;
+  height: 15px;
+}
+.plata_negro {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #d1d1d1 50%, black 50%);
+  border: black;
+  cursor: pointer;
+}
+.plata_negro:focus {
+  width: 20px;
+  height: 20px;
+  border: black 1px solid;
+}
+.plata_negro:not(:focus) {
+  width: 15px;
+  height: 15px;
+}
+
+/* CIRCULOS ELECCIÓN METAL PARA ANILLO Y COLLAR */
+.oro {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ebc880;
+  cursor: pointer;
+}
+.oro:focus {
+  width: 20px;
+  height: 20px;
+  border: black 1px solid;
+}
+.oro:not(:focus) {
+  width: 15px;
+  height: 15px;
+}
+.plata {
+  width: 20px;
+  border-radius: 50%;
+  background-color: #d1d1d1;
+  border: none;
+  cursor: pointer;
+}
+.plata:focus {
+  width: 20px;
+  height: 20px;
+  border: black 1px solid;
+}
+.plata:not(:focus) {
+  width: 15px;
+  height: 15px;
+}
+
 /* PENDIENTES */
 .pendienteSunbeam {
   grid-row: 1/2;
@@ -324,20 +428,25 @@ h2 {
 }
 .pendienteSunbeam div button {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 25px;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.pendienteSunbeam div button:focus img {
+  content: url('Images/Arrasando/corazonRojo.png');
 }
 .uds {
   position: absolute;
-  bottom: 110px;
+  bottom: 25%;
   right: 18px;
   background-color: black;
   color: white;
   font-size: small;
   padding: 5px;
 }
-.pendienteSunbeam:hover {
+.pendienteSunbeam img:hover {
   transform: translateY(-10px);
 }
 /* COLLAR */
@@ -350,13 +459,19 @@ h2 {
 }
 .collarCircles div button {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 25px;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
-.collarCircles:hover {
+.collarCircles div button:focus img {
+  content: url('Images/Arrasando/corazonRojo.png');
+}
+.collarCircles img:hover {
   transform: translateY(-10px);
 }
+
 /* Cajón con las características de las joyas y el precio */
 #arrasando p {
   color: grey;
@@ -389,6 +504,7 @@ h2 {
     grid-column: 2/3;
   }
 }
+
 /* --- 5º section - Tiendas Singularu */
 .Tiendas {
   display: grid;
@@ -432,28 +548,30 @@ h3 {
   .Tiendas {
     display: block;
     position: relative;
+    overflow: hidden;
   }
   .imgPequeña {
     display: block;
     width: 100%;
-    height: auto;
+    height: 70vh;
   }
   .texto {
     position: absolute;
-    top: 60%;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0);
     color: white;
-    align-items: start;
-    margin-left: 20px;
+    margin: 20px;
+    align-items: flex-start;
   }
   h3 {
     padding: 0;
   }
   .texto a {
     color: white;
-    padding: 20px 0;
+    padding-left: 0;
   }
 }
+
 /* --- 6º section - Características ---- */
 .Caracteristicas {
   display: flex;
@@ -480,7 +598,6 @@ h5 {
   color: black;
   align-items: center;
 }
-
 /* --- MEDIA QUERY 6º Section --- */
 @media (max-width: 900px) {
   .Caracteristicas {
@@ -514,13 +631,19 @@ h5 {
   width: 150px;
   margin: 10px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1110px) {
+  .revistas ul img {
+    width: 100px;
+  }
+}
+@media (max-width: 770px) {
   .revistas ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     justify-items: center;
   }
 }
+
 /* --- 8º section - Suscribirse --- */
 .suscribirse {
   display: flex;
@@ -551,6 +674,7 @@ h5 {
 .email div input {
   width: 20px;
   height: 20px;
+  min-width: 20px;
 }
 .email button {
   background-color: black;
@@ -564,7 +688,104 @@ h5 {
   text-decoration: underline;
   color: #0066cc;
 }
+
 /* --- FOOTER --- */
+.footer {
+  width: 100%;
+  background-color: #e9e8e8;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  padding: 30px;
+}
+.footer h6 {
+  font-size: medium;
+  font-weight: bolder;
+  margin: 15px 0;
+}
+.footer div ul li {
+  margin-top: 5px;
+}
+.footer div ul li a {
+  color: black;
+}
+
+.ayuda {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.jewelry {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.singularu {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.confianza {
+  grid-column: 4/6;
+  grid-row: 1/2;
+}
+.confianza div {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px;
+  border: 2px solid blueviolet;
+}
+.confianza div h6 {
+  font-weight: bold;
+}
+.confianza div img {
+  width: 20px;
+  height: 20px;
+}
+.confianza img {
+  width: 48px;
+  height: auto;
+}
+.confianza ul {
+  column-width: 200px;
+
+  border: 2px orange solid;
+}
+.confianza ul li {
+  display: flex;
+  align-items: center;
+  border: green 2px solid;
+}
+/* .confianza ul li:nth-child(4) {
+  break-after: column;
+} */
+.confianza p {
+  margin-left: 15px;
+}
+.ecommerce {
+  grid-column: 4/6;
+  margin-top: 5px;
+}
+.ecommerce a img {
+  width: 40px;
+  height: auto;
+  margin: 10px 5px 0 0;
+}
+@media (max-width: 1110px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer div {
+    margin: 10px 20px;
+  }
+  .confianza div {
+    margin: 0;
+  }
+}
+
+/* ---- 2º parte del footer ---- */
 /* -- Iconos Redes Sociales -- */
 .redes ul {
   display: flex;
@@ -610,11 +831,12 @@ h5 {
   height: auto;
   margin-top: 30px;
 }
+/* texto de debajo */
 .final p {
   justify-content: center;
+  text-align: center;
   margin: 10px 50px;
   font-size: small;
-  border: red 3px solid;
 }
 .enlaceEU {
   color: black;
