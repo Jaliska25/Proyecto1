@@ -202,7 +202,6 @@ h2 {
   align-items: end;
   margin-bottom: 40px;
 }
-
 /* --- QUERY DE LA 3º SECTION --- */
 @media (max-width: 575px) {
   .joyas {
@@ -259,37 +258,40 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
+  gap: 1rem;
 }
 .topRegalos img {
-  width: 95%;
+  width: 100%;
 }
 .topRegalos button {
   width: 40px;
 }
+
 /* CHARM PERRITO */
 .perrito {
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
+}
+.container {
   position: relative;
 }
-.perrito div button {
+.container button {
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: 10px;
+  right: 15px;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.perrito div button:focus img {
+.container button:focus img {
   content: url('Images/Arrasando/corazonRojo.png');
 }
-
 .viral {
   position: absolute;
-  bottom: 25%;
-  right: 18px;
+  bottom: 25px;
+  right: 0;
   background-color: black;
   color: white;
   font-size: small;
@@ -298,35 +300,14 @@ h2 {
 .reversible {
   position: absolute;
   left: 5px;
-  bottom: 25%;
+  bottom: 25px;
   color: black;
   font-size: medium;
 }
 .perrito img:hover {
   transform: translateY(-10px);
 }
-/* ANILLO */
-.anilloLetter {
-  grid-row: 1/2;
-  grid-column: 2/3;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.anilloLetter div button {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-.anilloLetter div button:focus img {
-  content: url('Images/Arrasando/corazonRojo.png');
-}
-.anilloLetter img:hover {
-  transform: translateY(-10px);
-}
+
 /* CIRCULOS ELECCIÓN COLOR Y METAL DEL CHARM */
 .circulos {
   display: flex;
@@ -384,6 +365,29 @@ h2 {
   height: 15px;
 }
 
+/* ANILLO */
+.anilloLetter {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.anilloLetter div button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.anilloLetter div button:focus img {
+  content: url('Images/Arrasando/corazonRojo.png');
+}
+.anilloLetter img:hover {
+  transform: translateY(-10px);
+}
+
 /* CIRCULOS ELECCIÓN METAL PARA ANILLO Y COLLAR */
 .oro {
   width: 20px;
@@ -426,21 +430,24 @@ h2 {
   flex-direction: column;
   position: relative;
 }
-.pendienteSunbeam div button {
+.container2 {
+  position: relative;
+}
+.container2 button {
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: 10px;
+  right: 15px;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-.pendienteSunbeam div button:focus img {
+.container2 button:focus img {
   content: url('Images/Arrasando/corazonRojo.png');
 }
 .uds {
   position: absolute;
-  bottom: 25%;
-  right: 18px;
+  bottom: 25px;
+  right: 0;
   background-color: black;
   color: white;
   font-size: small;
@@ -449,6 +456,7 @@ h2 {
 .pendienteSunbeam img:hover {
   transform: translateY(-10px);
 }
+
 /* COLLAR */
 .collarCircles {
   grid-row: 1/2;
@@ -480,17 +488,19 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.precio h4 {
-  margin-right: 15px;
+  gap: 20px;
 }
 .precio h5 {
-  margin-right: 20px;
+  right: 0;
   color: black;
   font-size: medium;
   font-weight: 1000;
 }
-@media (max-width: 770px) {
+/* MEDIA QUERY 4º Section */
+@media (max-width: 880px) {
+  #arrasando {
+    margin: 10px;
+  }
   .topRegalos {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -504,7 +514,28 @@ h2 {
     grid-column: 2/3;
   }
 }
-
+@media (max-width: 400px) {
+  .topRegalos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .perrito {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .anilloLetter {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .pendienteSunbeam {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .collarCircles {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+}
 /* --- 5º section - Tiendas Singularu */
 .Tiendas {
   display: grid;
@@ -690,6 +721,7 @@ h5 {
 }
 
 /* --- FOOTER --- */
+/* General y títulos */
 .footer {
   width: 100%;
   background-color: #e9e8e8;
@@ -704,12 +736,12 @@ h5 {
   margin: 15px 0;
 }
 .footer div ul li {
-  margin-top: 5px;
+  padding: 3px;
 }
 .footer div ul li a {
   color: black;
 }
-
+/* -- Distribución del footer -- */
 .ayuda {
   grid-column: 1/2;
   grid-row: 1/2;
@@ -726,6 +758,7 @@ h5 {
   grid-column: 4/6;
   grid-row: 1/2;
 }
+/* -- Apartado Confianza / Métodos de pago -- */
 .confianza div {
   height: 30px;
   display: flex;
@@ -733,7 +766,6 @@ h5 {
   align-items: center;
   margin-bottom: 10px;
   gap: 5px;
-  border: 2px solid blueviolet;
 }
 .confianza div h6 {
   font-weight: bold;
@@ -748,20 +780,15 @@ h5 {
 }
 .confianza ul {
   column-width: 200px;
-
-  border: 2px orange solid;
 }
 .confianza ul li {
   display: flex;
   align-items: center;
-  border: green 2px solid;
 }
-/* .confianza ul li:nth-child(4) {
-  break-after: column;
-} */
 .confianza p {
   margin-left: 15px;
 }
+/* --Sello Ecommerce -- */
 .ecommerce {
   grid-column: 4/6;
   margin-top: 5px;
@@ -776,11 +803,15 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
   }
   .footer div {
     margin: 10px 20px;
   }
   .confianza div {
+    margin: 0;
+  }
+  .confianza ul li img {
     margin: 0;
   }
 }
