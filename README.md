@@ -21,6 +21,7 @@ Sin JavaScript, sin frameworks, sin magia extra. Todo maquetado desde cero para 
 
 ## 📁 Estructura del proyecto
 proyecto-1-singularu/
+
 ├── index.html → Página principal
 ├── style.css → Estilos aplicados
 └── Images/ → Imágenes y recursos 
@@ -35,6 +36,7 @@ Aquí puedes ver cómo quedó el diseño final:
 
 
 🚫 **Aviso:** Este trabajo es solo con fines educativos. No está relacionado con Singularu ni se utiliza con fines comerciales.
+
 ¡Gracias por echarle un ojo! 🚀
 
 
