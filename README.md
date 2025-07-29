@@ -23,7 +23,9 @@ Sin JavaScript, sin frameworks, sin magia extra. Todo maquetado desde cero para 
 proyecto-1-singularu/
 
 ├── index.html → Página principal
+
 ├── style.css → Estilos aplicados
+
 └── Images/ → Imágenes y recursos 
 
 ## 🖼 Vista previa del proyecto
