@@ -38,6 +38,11 @@ Here’s how some of the final design looks:
 <img width="1920" height="869" alt="Screenshot 2" src="https://github.com/user-attachments/assets/8f0146eb-2255-45ab-8973-511ad64c9abc" />
 
 
+## 🔗 Live Demo
+
+👉 [Check out the gallery here](https://proyecto1-gilt.vercel.app/)  
+
+
 
 🚫 **Note:** This project was made strictly for educational purposes. It is not affiliated with Singularu and is not intended for commercial use.
 
