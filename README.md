@@ -40,7 +40,7 @@ Here’s how some of the final design looks:
 
 ## 🔗 Live Demo
 
-👉 [Check out the gallery here](https://proyecto1-gilt.vercel.app/)  
+👉 [Check out the web here](https://proyecto1-gilt.vercel.app/)  
 
 
 
