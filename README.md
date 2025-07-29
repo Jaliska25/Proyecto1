@@ -1,44 +1,46 @@
-# 🧪 PROYECTO 1 - MASTER EN CIBERSEGURIDAD
+# 🧪 PROJECT 1 - MASTER'S DEGREE IN CYBERSECURITY
 
-¡Hola! 👋  
-Este repositorio contiene el primer proyecto del Máster en Ciberseguridad. El encargo: **replicar la parte principal de una página web real usando solo HTML y CSS**.
-En este caso, decidí tomar como referencia la web de **Singularu** (una tienda online de joyas 💍) y **copiar solo la parte principal de su página**, sin funcionalidades ni interacción, únicamente el diseño visual.
+Hey there! 👋  
+This repository contains the first project from the Master's Degree in Cybersecurity. The assignment: **replicate the homepage of a real website using only HTML and CSS**.
+In this case, I decided to use **Singularu** (an online jewelry store 💍) as a reference, with no functionality or interaction — just the visual design.
 
-## 💡 ¿Qué incluye?
+## 💡 What’s included?
 
-- Cabecera con logo y menú de navegación.
-- Banner o imagen principal.
-- Secciones destacadas (según el diseño original)
-- Footer
-- Estilos básicos aplicados con CSS
+- Header with logo and navigation menu.
+- Main banner or hero image.
+- Highlighted sections (based on the original layout). 
+- Footer.
+- Basic styles applied with CSS.
 
-## 🛠 Tecnologías utilizadas
+## 🛠 Technologies used
 
-- **HTML5** – Para estructurar el contenido
-- **CSS3** – Para los estilos y el diseño visual
+- **HTML5** – For structuring the content  
+- **CSS3** – For styling and visual layout  
 
-Sin JavaScript, sin frameworks, sin magia extra. Todo maquetado desde cero para practicar.
+No JavaScript, no frameworks, no extra magic. Everything was hand-coded from scratch to practice the fundamentals.
 
-## 📁 Estructura del proyecto
+## 📁 Project structure
 proyecto-1-singularu/
 
-├── index.html → Página principal
+├── index.html → Main page
 
-├── style.css → Estilos aplicados
+├── style.css → CSS styles
 
-└── Images/ → Imágenes y recursos 
-
-## 🖼 Vista previa del proyecto
-Aquí puedes ver cómo quedó el diseño final:
-
-<img width="1920" height="873" alt="Captura de pantalla " src="https://github.com/user-attachments/assets/0a96fc03-e66c-4263-9dad-8647a41a10b3" />
-
-<img width="1920" height="869" alt="Captura de pantalla 2" src="https://github.com/user-attachments/assets/8f0146eb-2255-45ab-8973-511ad64c9abc" />
+└── Images/ → Images and other resources
 
 
+## 🖼 Project preview
 
-🚫 **Aviso:** Este trabajo es solo con fines educativos. No está relacionado con Singularu ni se utiliza con fines comerciales.
+Here’s how some of the final design looks:
 
-¡Gracias por echarle un ojo! 🚀
+<img width="1920" height="873" alt="Screenshot 1" src="https://github.com/user-attachments/assets/0a96fc03-e66c-4263-9dad-8647a41a10b3" />
+
+<img width="1920" height="869" alt="Screenshot 2" src="https://github.com/user-attachments/assets/8f0146eb-2255-45ab-8973-511ad64c9abc" />
+
+
+🚫 **Note:** This project was made strictly for educational purposes. It is not affiliated with Singularu and is not intended for commercial use.
+
+Thanks for checking it out!🚀
+Feedback is always welcome!😊
 
 
