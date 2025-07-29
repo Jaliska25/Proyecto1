@@ -1,7 +1,7 @@
 # 🧪 PROJECT 1 - MASTER'S DEGREE IN CYBERSECURITY
 
 Hey there! 👋  
-This repository contains the first project from the Master's Degree in Cybersecurity. The assignment: **replicate the homepage of a real website using only HTML and CSS**.
+This repository contains the first project from the Master's Degree in Cybersecurity. The assignment: **"Replicate the homepage of a real website using only HTML and CSS"**.
 In this case, I decided to use **Singularu** (an online jewelry store 💍) as a reference, with no functionality or interaction — just the visual design.
 
 ## 💡 What’s included?
